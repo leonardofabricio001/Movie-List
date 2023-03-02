@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/settings.png" alt="" class="settings" id="settings-button">
+    <input type="button" class="add" value="+" id="add-movie">
+  </header>
+
+  <section class="fade-background">
+    <div class="info-settings">
+      <div class="info-settings-exit">
+        <input type="button" value="X" class="exit-button-style exit-settings">
+      </div>
+      <h1 class="settings-title">Plano de Fundo</h1>
+
+      <div class="background-images">
+        <img src="./img/background/min-size/background-1.jpg" alt="" class="background selected-background"
+          id="background-1">
+        <img src="./img/background/min-size/background-2.jpg" alt="" class="background" id="background-2">
+        <img src="./img/background/min-size/background-3.jpg" alt="" class="background" id="background-3">
+        <img src="./img/background/min-size/background-4.jpg" alt="" class="background" id="background-4">
+      </div>
+    </div>
+
+    <div class="movie-info">
+      <div class="image-container">
+        <img src="img/no-image.jpg" alt="" id="movie-image">
+        <input type="file" id="image-upload" />
+      </div>
+
+      <div class="info-items">
+        <input type="button" value="X" class="exit-button-style exit-movie">
+        <input type="text" placeholder="Nome do Filme" class="text-input-style movie-data">
+        <div class="movie-details">
+          <input type="text" placeholder="Ano de Lançamento" class="text-input-style movie-data" maxlength="4"
+            id="movie-release">
+          <input type="text" placeholder="Duração" class="text-input-style movie-data" maxlength="5" id="movie-length">
+          <input type="text" placeholder="Gênero" class="text-input-style movie-data" id="movie-type" maxlength="10">
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" maxlength="500" placeholder="Sinopse" class="movie-data"></textarea>
+        <input type="text" placeholder="Link para assistir" class="text-input-style movie-data link">
+        <input type="button" class="add-movie-button" value="Adicionar Filme">
+      </div>
+    </div>
+  </section>
+
+  <section class="movie-output"></section>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/load_delete_movies.js"></script>
+  <script src="./js/load_delete_movies.js"></script>
+  <script src="./js/backgrounds.js"></script>
+</body>
+
+</html>
