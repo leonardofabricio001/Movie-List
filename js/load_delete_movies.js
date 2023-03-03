@@ -33,7 +33,7 @@ function detectMutation(mutationList) {
     const getMovies = JSON.parse(localStorage.getItem('movieData'));
     getMovies.movies.forEach((currentValue) => {
       const getID = document.querySelector(`#${currentValue.movieId}`);
-      getID.addEventListener('click', function () { deleteMovie(currentValue.movieId); console.log(currentValue.movieId) });
+      getID.addEventListener('click', function () { deleteMovie(currentValue.movieId) });
     });
   }
 }
